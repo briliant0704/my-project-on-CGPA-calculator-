@@ -32,7 +32,7 @@ input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-in
 .result-inner{display:flex;gap:20px;align-items:center}
 .result .big{color:var(--bg);30px;font-weight:700}
 
-.note{margin-top:18px;color:var('yellow');font-size:30px}
+.note{margin-top:18px;color:var('yelloe');font-size:30px;font-weight:bold;}
 footer.copyright{
   text-decoration-color: #a33;
   text-emphasis:red;
@@ -47,6 +47,7 @@ footer.copyright{
 
 
 @media (max-width:640px){.brand h1{font-size:16px}.brand .logo{width:52px;height:52px}}
+
 
 
 
