@@ -1,0 +1,48 @@
+:root{
+  --ful-green:#0b6b3a; /* deep FUL green */
+  --gold:#c79a2f;      /* accent gold */
+  --bg:#f6f7f3;
+  --muted:#666;
+  --card:#ffffff;
+}
+
+*{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+body{margin:18px;background:url('ful_gate.jpg.png');
+
+.card{max-width:980px;margin:12px auto;padding:18px;background:url('ful_campus.jpg.jpg');border-radius:12px;box-shadow:0 6px 28px rgba(10,20,10,0.08)}
+.brand{display:flex;gap:14px;align-items:center;border-bottom:1px solid #eee;padding-bottom:14px;margin-bottom:14px}
+.brand .logo{width:64px;height:64px;border-radius:10px;background::linear-gradient(180deg,var(--ful-green), #08512a);display:flex;align-items:center;justify-content:center;color:rgb(43, 7, 7);font-weight:700;font-size:20px}
+
+.brand h1{margin:0;font-size:50px;letter-spacing:0.6px}
+.brand h2{margin:0;font-size:30px;color:var(--muted);font-weight:600}
+
+.controls{display:flex;gap:10px;padding:12px 0}
+.btn{padding:8px 12px;border-radius:8px;border:1px solid rgba(177, 9, 9, 0.06);background:#f7f0f0;cursor:pointer}
+.btn.primary{background:var(--ful-green);color:rgb(247, 240, 240);border:none}
+.btn.ghost{background:#a33;border:1px lightcyan #ebf3ee}
+
+.table-wrap{overflow:auto;margin-top:10px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid #f0f0f0}
+th{background:linear-gradient(180deg,#f7faf6,#f1f6ee);font-weight:700}
+input[type="text"],input[type="number"]{width:100%;padding:6px;border-radius:6px;border:1px solid #ddd}
+input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-inner-spin-button{appearance:color:var(var(--gold));margin:0}
+
+.result{margin-top:14px;padding:12px;border-radius:8px;background:linear-gradient(90deg,#4f834f,#d68c4f);display:flex;justify-content:center}
+.result-inner{display:flex;gap:20px;align-items:center}
+.result .big{color:var(--bg);30px;font-weight:700}
+
+.note{margin-top:12px;color:var(--bg);font-size:25px}
+footer.copyright{
+  text-decoration-color: #a33;
+  text-emphasis:red;
+  background-color:#ddd;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.remove-btn{background:transparent;border:none;color:#a33;cursor:pointer;font-weight:700}
+
+@media (max-width:640px){.brand h1{font-size:16px}.brand .logo{width:52px;height:52px}}

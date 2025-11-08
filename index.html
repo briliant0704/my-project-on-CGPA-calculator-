@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FEDERAL UNIVERSITY LOKOJA - CGPA CALCULATOR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <header class="brand">
+      <div class="logo">FUL</div>
+      <div>
+        <h1>FEDERAL UNIVERSITY LOKOJA</h1>
+        <h2>CGPA CALCULATOR</h2>
+      </div>
+    </header>
+
+    <section class="controls">
+      <button id="addRow" class="btn">+ Add Course</button>
+      <button id="calculate" class="btn primary">Calculate CGPA</button>
+      <button id="clearAll" class="btn ghost">Clear</button>
+    </section>
+
+    <section class="table-wrap">
+      <table id="coursesTable">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Units</th>
+            <th>Score (0-100)</th>
+            <th>Grade</th>
+            <th>GP</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="coursesBody">
+          <!-- rows inserted here -->
+        </tbody>
+      </table>
+    </section>
+
+    <section class="result" id="result">
+      <div class="result-inner">
+        <div>Total Units: <span id="totalUnits">0</span></div>
+        <div>Sum (Units × GP): <span id="sumUp">0</span></div>
+        <div class="big">CGPA: <span id="cgpa">0.00</span></div>
+      </div>
+    </section>
+
+    <footer class="note">Tip: Add courses, type unit &amp; score, then press <strong>Calculate CGPA</strong>.</footer>
+  </main>
+
+  <script src="app.js"></script>
+  <footer class="copyright">
+    build  and develop by <b> Abraham Brilliant</b>
+  </footer>
+</body>
