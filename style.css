@@ -28,7 +28,7 @@ th{background:linear-gradient(180deg,#f7faf6,#f1f6ee);font-weight:700}
 input[type="text"],input[type="number"]{width:100%;padding:6px;border-radius:6px;border:1px solid #ddd}
 input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-inner-spin-button{appearance:color:var(var(--gold));margin:0}
 
-.result{margin-top:14px;padding:12px;border-radius:8px;background:linear-gradient(90deg,#4f834f,#d68c4f);display:flex;justify-content:center}
+.result{margin-top:14px;padding:12px;border-radius:8px;background:white;linear-gradient(90deg,#4f834f,#d68c4f);display:flex;justify-content:center}
 .result-inner{display:flex;gap:20px;align-items:center}
 .result .big{color:var(--bg);30px;font-weight:700}
 
@@ -47,6 +47,7 @@ footer.copyright{
 
 
 @media (max-width:640px){.brand h1{font-size:16px}.brand .logo{width:52px;height:52px}}
+
 
 
 
